@@ -1,0 +1,32 @@
+/* Footer Styling */
+.footer {
+    background-color: #00a859; /* Eco-friendly green */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #d4f5e4; /* Lighter green for hover effect */
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 0.8rem;
+      padding: 15px 0;
+    }
+  }
+  
