@@ -1,10 +1,18 @@
 /* General Navbar Styling */
+/* Apply Sans Serif font globally */
+* {
+  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #00a859;
+  background-color: #228B22;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -23,11 +31,13 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
+
+
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -67,14 +77,14 @@
 
 .navbar-links a:hover {
   background-color: white;
-  color: #00a859;
+  color: #228B22;
 }
 
 /* Hamburger Menu Button */
 .menu-toggle {
   display: none;
   background: none;
-  border: none;
+  border: none !important;
   cursor: pointer;
   padding: 10px;
   position: relative;
@@ -134,7 +144,7 @@
   position: absolute;
   top: 70px;
   left: 0;
-  background-color: #00a859;
+  background-color: #228B22;
   padding: 20px 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;

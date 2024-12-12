@@ -1,95 +1,96 @@
 /* General Styling */
+/* Apply Sans Serif font globally */
+* {
+  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .about-us {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Section Title */
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  color: #228B22;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section Content */
+.section-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+/* Founder Section */
+.founder-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align the content */
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: center; /* Center align the text */
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px; /* Add spacing below the image */
+}
+
+.founder-details {
+  max-width: 800px; /* Limit the width for better readability */
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify; /* Justify text for a cleaner look */
+}
+
+/* Values Section */
+.values-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values-list li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .section-title {
-    font-size: 2.5rem;
-    color: #00a859;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 2rem;
   }
-  
-  /* Section Content */
+
   .section-content {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 40px;
-    text-align: justify;
-  }
-  
-  /* Founder Section */
-  .founder-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .founder-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .founder-details {
-    flex: 1;
     font-size: 1rem;
-    line-height: 1.6;
   }
-  
-  /* Values Section */
-  .values-section {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  
-  .values-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .values-list li {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  /* Team Section */
-  .team-section {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #555;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .founder-section {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .founder-image {
-      margin-bottom: 20px;
-    }
-  
-    .section-title {
-      font-size: 2rem;
-    }
-  
-    .section-content {
-      font-size: 1rem;
-    }
-  }
-  
+}

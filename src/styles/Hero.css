@@ -1,9 +1,18 @@
 /* Hero Section Styling */
+/* Apply Sans Serif font globally */
+* {
+  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero {
   position: relative;
   text-align: center;
   color: white;
   font-family: 'Arial', sans-serif;
+  margin-top: 10px;
 }
 
 /* Hero Image */
@@ -53,7 +62,7 @@
 }
 
 .hero-button {
-  background-color: #00a859;
+  background-color: #228B22;
   color: white;
   padding: 12px 25px;
   border: none;

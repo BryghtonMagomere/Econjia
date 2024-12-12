@@ -1,3 +1,11 @@
+/* Apply Sans Serif font globally */
+* {
+  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .blog {
     padding: 50px 20px;
     background-color: #f4f4f4;
@@ -7,7 +15,7 @@
   .blog-title {
     text-align: center;
     font-size: 2.5rem;
-    color: #00a859;
+    color: #228B22;
     margin-bottom: 10px;
   }
   
@@ -45,7 +53,7 @@
   
   .blog-card-title {
     font-size: 1.5rem;
-    color: #00a859;
+    color: #228B22;
     margin-bottom: 10px;
   }
   
@@ -58,14 +66,14 @@
   .read-more {
     text-decoration: none;
     color: #fff;
-    background: #00a859;
+    background: #228B22;
     padding: 10px 20px;
     border-radius: 4px;
     transition: background 0.3s ease;
   }
   
   .read-more:hover {
-    background: #008a47;
+    background: #228B22;
   }
   .blog-iframe {
     width: 100%;

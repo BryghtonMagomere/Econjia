@@ -98,8 +98,8 @@ const Contact = () => {
             </p>
             <p>
               <strong>Email:</strong>{' '}
-              <a href="mailto:info@example.com" className="contact-link">
-                info@example.com
+              <a href="mailto:info@econjia.com" className="contact-link">
+              info@econjia.com
               </a>
             </p>
             <div className="social-icons">

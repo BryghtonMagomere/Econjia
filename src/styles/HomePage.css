@@ -1,79 +1,113 @@
-/* Services Section */
-.services-section {
+/* Apply Sans Serif font globally */
+/* Apply Sans Serif font globally */
+* {
+  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage .services-section {
   padding: 50px 20px;
   background-color: #f9f9f9;
   text-align: center;
 }
 
-.services-title {
+.homepage .services-title {
   font-size: 2.5rem;
-  color: #00a859;
+  color: #228B22;
   margin-bottom: 30px;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-  gap: 110px;
-  justify-content: center;
-  padding: 20px;
+.homepage .services-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: center; /* Center the items horizontally */
+  align-items: stretch; /* Ensure all cards are the same height */
+  gap: 10px; /* Space between cards */
+  padding: 40px;
 }
 
-.service-card {
+.homepage .service-card {
   background: #fff;
+  padding-top: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-align: left;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 48%; /* Set width for two cards per row */
+  max-width: 700px; /* Limit maximum card size */
+  margin: 0 auto; /* Ensure the card aligns in the center individually */
+  display: flex; /* Flex container for card content */
+  flex-direction: column; /* Stack card elements vertically */
+  justify-content: space-between; /* Spread card content evenly */
+  min-height: 400px; /* Set minimum height for uniform size */
 }
 
-.service-card:hover {
+.homepage .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.service-image {
+.homepage .service-image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
-.service-content {
+.homepage .service-content {
   padding: 20px;
+  flex: 1; /* Ensures content stretches to fill space */
+  display: flex;
+  flex-direction: column; /* Stack title, description, and button */
+  justify-content: flex-start; /* Align content at the top */
 }
 
-.service-title {
+.homepage .service-title {
   font-size: 1.5rem;
-  color: #00a859;
+  color: #228B22;
   margin-bottom: 10px;
 }
 
-.service-description {
+.homepage .service-description {
   font-size: 1rem;
   color: #555;
   margin-bottom: 15px;
+  flex: 1; /* Ensures the description takes available space */
 }
 
-.read-more {
+.homepage .read-more {
   font-size: 1rem;
-  color: #00a859;
+  color: #e4ede9;
+  width: 30%;
+  justify-self: center;
   text-decoration: none;
   font-weight: bold;
 }
 
-.read-more .arrow {
+.homepage .read-more .arrow {
   margin-left: 5px;
   transition: transform 0.3s ease;
 }
 
-.read-more:hover .arrow {
+.homepage .read-more:hover .arrow {
   transform: translateX(5px);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr; /* One card per row on smaller screens */
+  .homepage .service-card {
+    width: 100%; /* Full width for smaller screens */
   }
+  .homepage .read-more {
+    width: 60%;
+  }
+}
+.readmore-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
 }

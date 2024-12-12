@@ -1,6 +1,14 @@
 /* Footer Styling */
+/* Apply Sans Serif font globally */
+* {
+  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .footer {
-    background-color: #00a859; /* Eco-friendly green */
+    background-color: #228B22; /* Eco-friendly green */
     color: white;
     text-align: center;
     padding: 20px 0;

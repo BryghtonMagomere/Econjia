@@ -1,101 +1,143 @@
-/* General Section Styling */
+/* Apply Sans Serif font globally */
+* {
+  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .services {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Services Title */
+.services .services-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00a859;
+}
+
+/* Services Grid */
+.services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr)); /* Two cards per row */
+  justify-content: center; /* Align items to the center */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Service Card */
+.services .service-card {
+  background: rgb(207, 202, 202);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.services .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Image */
+.services .service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+
+/* Service Title */
+.services .service-title {
+  font-size: 1.5rem;
+  color: #228B22;
+  margin-bottom: 10px;
+}
+
+/* Service Description */
+.services .service-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Service Details (Optional) */
+.services .service-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services .service-details li {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services .services-grid {
+    grid-template-columns: repeat(1, minmax(280px, 1fr)); /* One card per row for smaller screens */
   }
-  
-  .services-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #00a859;
+
+  .services .services-title {
+    font-size: 2rem;
   }
-  
-  /* Services Grid */
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    padding: 20px;
+
+  .services .service-card {
+    padding: 15px;
   }
-  
-  /* Service Card Styling */
-  /* Service Card Styling */
-.service-card {
-    background: rgb(207, 202, 202);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+
+  .services .service-image {
+    height: 150px;
   }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+  .services .service-title {
+    font-size: 1.3rem;
   }
-  
-  /* Image Styling */
-  .service-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 15px;
+
+  .services .service-description {
+    font-size: 0.95rem;
   }
-  
-  /* Card Content */
-  .service-title {
-    font-size: 1.5rem;
-    color: #00a859;
-    margin-bottom: 10px;
+
+  .services .service-details li {
+    font-size: 0.85rem;
   }
-  
-  .service-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 20px 10px;
   }
-  
-  .service-details {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+  .services .services-title {
+    font-size: 1.8rem;
   }
-  
-  .service-details li {
+
+  .services .service-card {
+    padding: 10px;
+  }
+
+  .services .service-image {
+    height: 120px;
+  }
+
+  .services .service-title {
+    font-size: 1.2rem;
+  }
+
+  .services .service-description {
     font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 8px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .services-title {
-      font-size: 2rem;
-    }
-  
-    .service-card {
-      padding: 15px;
-    }
-  
-    .service-image {
-      height: 150px;
-    }
-  
-    .service-title {
-      font-size: 1.3rem;
-    }
-  
-    .service-description {
-      font-size: 0.95rem;
-    }
-  
-    .service-details li {
-      font-size: 0.85rem;
-    }
+
+  .services .service-details li {
+    font-size: 0.8rem;
   }
-  
-  
+}

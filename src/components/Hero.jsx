@@ -11,7 +11,7 @@ const Hero = () => {
         <img src={Heroimage} alt="Sustainability" className="hero-image" />
         <div className="hero-overlay">
           <div className="hero-text">
-            <h1>EcoNjia Consultancy</h1>
+            <h1>Eco-Njia Consultancy</h1>
             <p>
               EcoNjia Consultancy is your partner in creating a sustainable future. We provide  tailored solutions in sustainability consulting, science communication, training, waste recycling, and eco-friendly product design.
             </p>

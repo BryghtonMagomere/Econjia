@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Nav.css";
 import Logo from "./../assets/logo.jpg";
+import { Logotranspaent } from "../utils/images";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,13 +16,13 @@ const Navbar = () => {
       <div className="navbar-brand">
         <div className="logo-holder">
           <img
-            src={Logo} 
+            src={Logotranspaent} 
             alt="EcoNjia Logo"
             className="logo"
           />
         </div>
         <Link to="/" className="brand-name">
-          EcoNjia Consultancy
+          Eco-Njia Consultancy
         </Link>
         <button className="menu-toggle" onClick={toggleMenu}>
           <span className="hamburger"></span>
