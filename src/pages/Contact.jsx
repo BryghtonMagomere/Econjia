@@ -33,7 +33,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    postData('http://localhost:3000/contact-us-via-mail', formData)
+    postData('https://api-j970.onrender.com/contact-us-via-mail', formData)
     .then(data => {
       console.log(data); // JSON data parsed by `response.json()` call
     })
@@ -83,17 +83,17 @@ const Contact = () => {
             <h3>Contact Information</h3>
             <p>
               <strong>Phone:</strong>{' '}
-              <a href="tel:+123456789" className="contact-link">+123 456 789</a>
+              <a href="tel:+254 796354505" className="contact-link">0796354505</a>
             </p>
             <p>
               <strong>WhatsApp:</strong>{' '}
               <a
-                href="https://wa.me/123456789"
+                href="https://wa.me/+254 796354505"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
               >
-                +123 456 789
+                0796354505
               </a>
             </p>
             <p>

@@ -1,83 +1,191 @@
-/* Apply Sans Serif font globally */
-* {
-  font-family: 'Roboto', sans-serif; /* Or just use 'sans-serif' for the default */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Blog Styles */
+.blog {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
 }
 
-.blog {
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
+.blog-title {
+  font-size: 2.5rem;
+  color: #228b22;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 20px;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  color: #228b22;
+  margin-bottom: 10px;
+}
+
+.blog-card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.blog-card-articles .blog-article {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.blog-article-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.blog-article-content {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.blog-article-link {
+  font-size: 0.9rem;
+  color: #228b22;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-article-link:hover {
+  color: #006400;
+}
+
+.blog-card-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #228b22;
+}
+
+.blog-iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  border: none;
+}
+
+@media (max-width: 768px) {
   .blog-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #228B22;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    padding: 0 10px;
   }
-  
-  .blog-intro {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+
+  .blog-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
-  
-  .loading {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  
-  .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
+
+  .blog-card {
+    max-width: 100%;
     margin: 0 auto;
   }
-  
-  .blog-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+
+  .blog-card-content {
+    padding: 15px;
   }
-  
-  .blog-card:hover {
-    transform: translateY(-5px);
-  }
-  
+
   .blog-card-title {
-    font-size: 1.5rem;
-    color: #228B22;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
   }
-  
-  .blog-card-excerpt {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
+
+  .blog-card-description {
+    font-size: 0.95rem;
   }
-  
-  .read-more {
-    text-decoration: none;
-    color: #fff;
-    background: #228B22;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background 0.3s ease;
+
+  .blog-article-title {
+    font-size: 1.1rem;
   }
-  
-  .read-more:hover {
-    background: #228B22;
+
+  .blog-article-content {
+    font-size: 0.85rem;
   }
+
+  .blog-article-link {
+    font-size: 0.85rem;
+  }
+
+  .social-icon {
+    font-size: 1.3rem;
+  }
+
   .blog-iframe {
-    width: 100%;
-    height: 80vh;
-    border: none;
+    height: 400px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .blog-title {
+    font-size: 1.8rem;
+  }
+
+  .blog-card-title {
+    font-size: 1.2rem;
+  }
+
+  .blog-card-description {
+    font-size: 0.9rem;
+  }
+
+  .blog-article-title {
+    font-size: 1rem;
+  }
+
+  .blog-article-content {
+    font-size: 0.8rem;
+  }
+
+  .blog-article-link {
+    font-size: 0.8rem;
+  }
+
+  .social-icon {
+    font-size: 1.2rem;
+  }
+
+  .blog-iframe {
+    height: 350px;
+  }
+}

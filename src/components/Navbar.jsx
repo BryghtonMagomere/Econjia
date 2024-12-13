@@ -14,13 +14,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <div className="logo-holder">
+        {/* <div className="logo-holder">
           <img
             src={Logotranspaent} 
             alt="EcoNjia Logo"
             className="logo"
           />
-        </div>
+        </div> */}
         <Link to="/" className="brand-name">
           Eco-Njia Consultancy
         </Link>
