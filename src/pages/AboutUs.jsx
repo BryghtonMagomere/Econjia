@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import "../styles/AboutUs.css";
+import Layout from '../components/layout';
 
 const AboutUs = () => {
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <section className="about-us">
         <div className="about-container">
           {/* Our Story */}
@@ -55,9 +55,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
-  );
+    </Layout>
+    );
 };
 
 export default AboutUs;

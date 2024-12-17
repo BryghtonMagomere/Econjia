@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/Services.css";
+import Layout from "../components/layout";
 
 const servicesData = [
   {
@@ -55,9 +56,8 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <div>
-      <Navbar />
-      <section className="services">
+   <Layout>
+    <section className="services">
         <h1 className="services-title">Our Services</h1>
         <div className="services-grid">
           {servicesData.map((service, index) => (
@@ -73,8 +73,7 @@ const Services = () => {
           ))}
         </div>
       </section>
-      <Footer />
-    </div>
+   </Layout>
   );
 };
 

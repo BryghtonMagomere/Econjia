@@ -7,6 +7,7 @@ import Heroimage2 from "./../assets/kids2.jpg";
 import Heroimage3 from "./../assets/mtaani.jpg";
 import Heroimage5 from "./../assets/mtaani3.jpg";
 import Heroimage6 from "./../assets/mtaani4.jpg";
+import Layout from "../components/layout";
 
 const projectsData = [
   {
@@ -38,9 +39,8 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div>
-      <Navbar />
-      <section className="projects">
+   <Layout>
+    <section className="projects">
         <h1 className="projects-title">Our Projects</h1>
         <div className="projects-grid">
           {projectsData.map((project, index) => (
@@ -54,8 +54,7 @@ const Projects = () => {
           ))}
         </div>
       </section>
-      <Footer />
-    </div>
+   </Layout>
   );
 };
 

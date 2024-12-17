@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import {Communication, Consulting, Logo, Products, Recycling, Training} from './../utils/images'
 import "../styles/HomePage.css";
 import { Link } from 'react-router-dom';
+import Layout from '../components/layout';
 // import Logo
 const servicesData = [
   {
@@ -37,9 +38,9 @@ const servicesData = [
 
 const HomePage = () => {
   return (
+  <Layout>
     <div className="homepage">
-  <Navbar />
-  <Hero />
+    <Hero />
   <section className="services-section">
     <h2 className="services-title">Our Services</h2>
     <div className="services-grid">
@@ -59,8 +60,8 @@ const HomePage = () => {
       ))}
     </div>
   </section>
-  <Footer />
-</div>
+  </div>
+  </Layout>
   );
 };
 

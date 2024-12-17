@@ -1,0 +1,129 @@
+/* General Styling */
+.sustainability-tips {
+  background: linear-gradient(135deg, #e8f5e9, #f9f9f9);
+  padding: 40px 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.page-title {
+  font-size: 2.8rem;
+  color: #228B22;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #228B22;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444; /* Adjusted for readability */
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #228B22;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.content h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #228B22;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #444;
+}
+
+.content b {
+  color: #228B22;
+  font-weight: 600;
+}
+
+.content i {
+  font-style: italic;
+  color: #555;
+}
+
+.content p:last-of-type {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #228B22;
+}
+
+/* Hover Button Effect (if added later) */
+.cta-button:hover {
+  background: #228B22;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.4rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 0.95rem;
+  }
+
+  .content h2 {
+    font-size: 1.6rem;
+  }
+}

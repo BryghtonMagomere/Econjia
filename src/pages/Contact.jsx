@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import "../styles/Contact.css";
 import { useNavigate } from 'react-router-dom';
+import Layout from '../components/layout';
 
 const Contact = () => { 
   const [formData, setFormData] = useState({
@@ -45,8 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <section className="contact">
         <h2 className="contact-title">Get in Touch</h2>
         <div className="contact-container">
@@ -86,16 +86,9 @@ const Contact = () => {
               <a href="tel:+254 796354505" className="contact-link">0796354505</a>
             </p>
             <p>
-              <strong>WhatsApp:</strong>{' '}
-              <a
-                href="https://wa.me/+254 796354505"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-link"
-              >
-                0796354505
-              </a>
-            </p>
+    <strong>Whatsapp:</strong>{' '}
+    <a href="tel:+254796354505" className="contact-link">0796354505</a>
+  </p>
             <p>
               <strong>Email:</strong>{' '}
               <a href="mailto:info@econjia.com" className="contact-link">
@@ -104,21 +97,21 @@ const Contact = () => {
             </p>
             <div className="social-icons">
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/econjia?igsh=YzljYTk1ODg3Zg=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-instagram"></i>
               </a>
               <a
-                href="https://www.twitter.com"
+                href="https://www.linkedin.com/company/eco-njia-consultancy-ltd/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-x-twitter"></i>
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/eco-njia-consultancy-ltd/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -135,8 +128,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
