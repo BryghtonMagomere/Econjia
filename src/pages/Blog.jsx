@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
-import { Truncate } from "../utils/trancate";
-import Ecg from './../assets/ECG.jpg';
-import GreenWorld from './../assets/GREENWORLD.jpg';
+import Ecg from "./../assets/ECG.jpg";
+import GreenWorld from "./../assets/GREENWORLD.jpg";
 import { Communication, Products } from "../utils/images";
 import { Link } from "react-router-dom";
+import "../styles/Blog.css";
 
 const Blog = () => {
   const blogArticles = [
@@ -13,7 +13,6 @@ const Blog = () => {
       category: "Sustainability Tips",
       content: `
         Discover actionable steps for sustainable living, from reducing plastic use to composting.
-        Sustainability begins with small, intentional daily choices that create a ripple effect.
       `,
       link: "/SustainabilityTips",
       image: Ecg,
@@ -22,8 +21,7 @@ const Blog = () => {
       title: "The Role of ESG and CSR in Building a Greener Future",
       category: "EcoNjia Updates",
       content: `
-        Understand how businesses can embrace ESG (Environmental, Social, Governance) and CSR (Corporate Social Responsibility)
-        to create positive environmental and social impacts.
+        Understand how businesses can embrace ESG (Environmental, Social, Governance) and CSR to create positive impacts.
       `,
       link: "/EcoNjiaUpdates",
       image: GreenWorld,
@@ -33,7 +31,6 @@ const Blog = () => {
       category: "Science Communication",
       content: `
         Learn how effective science communication bridges the gap between research and action.
-        Eco-Njia's initiatives empower individuals and communities to act on sustainable practices.
       `,
       link: "/sciencecommunication",
       image: Communication,
@@ -42,8 +39,7 @@ const Blog = () => {
       title: "The Future of Sustainable Products",
       category: "Sustainable Products",
       content: `
-        Explore emerging trends in eco-friendly consumer products and their role in reducing waste.
-        Eco-Njia offers bamboo products, sustainable tea, and journals for mindful living.
+        Explore trends in eco-friendly consumer products and their role in reducing waste.
       `,
       link: "/sustainableproducts",
       image: Products,
@@ -53,22 +49,22 @@ const Blog = () => {
   return (
     <Layout>
       <section className="blog">
-        <h1 className="blog-title">Eco-Njia Blog</h1>
-        <p className="blog-intro">
-          Dive into our latest articles, tips, and updates for a sustainable future. Explore our categories below!
-        </p>
+        <div className="blog-header">
+          <h1 className="blog-title">Eco-Njia Blog</h1>
+          <p className="blog-intro">
+            Dive into our latest articles, tips, and updates for a sustainable future. Explore our categories below!
+          </p>
+        </div>
 
         <div className="blog-container">
           {blogArticles.map((article, index) => (
             <div key={index} className="blog-card">
               <img src={article.image} alt={article.title} className="blog-card-image" />
               <div className="blog-card-content">
-                <div style={{ height: "75px" }}>
-                  <h2 className="blog-card-title">{article.title}</h2>
-                </div>
                 <p className="blog-card-category">{article.category}</p>
-                <p className="blog-card-description">{Truncate(article.content, 80)}</p>
-                <Link to={`/blog/${article.title.replace(/\s+/g, '-').toLowerCase()}`} className="read-more">
+                <h2 className="blog-card-title">{article.title}</h2>
+                <p className="blog-card-description">{article.content.trim()}</p>
+                <Link to={article.link} className="read-more">
                   Read More
                 </Link>
               </div>
@@ -76,6 +72,7 @@ const Blog = () => {
           ))}
         </div>
 
+        {/* Personal Blog Section */}
         <div className="personal-blog-section">
           <p className="personal-blog-text">
             For a glimpse into my personal musings beyond sustainability and work, check out my lifestyle blog,{' '}
