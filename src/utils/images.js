@@ -5,6 +5,7 @@ import Recycling from './../assets/Waste Recycling.webp'
 import Consulting from './../assets/Sustainability, ESG, and CSR Consulting (3).jpg'
 import Training from './../assets/Sustainability Training.webp'
 import Communication from './../assets/COMM.JPG'
+import profile from './../assets/profile.jpg'
 
 
-export  {Logo,Products,Recycling,Consulting,Training,Communication,Logotranspaent}
+export  {Logo,Products,Recycling,Consulting,Training,Communication,Logotranspaent,profile}

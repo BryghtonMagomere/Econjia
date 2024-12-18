@@ -19,7 +19,7 @@ const Contact = () => {
   async function postData(url , data ) {
     // Default options are marked with *
     const response = await fetch(url, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      method: 'POST', 
       headers: {
         'Content-Type': 'application/json'
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -118,7 +118,7 @@ const Contact = () => {
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/profile.php?id=61570796610040&mibextid=JRoKGi"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import "../styles/AboutUs.css";
 import Layout from '../components/layout';
-
+import {profile} from './../utils/images'
 const AboutUs = () => {
   return (
     <Layout>
@@ -22,7 +22,7 @@ const AboutUs = () => {
           {/* Meet the Founder */}
           <div className="founder-section">
             <img 
-              src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?t=st=1733433076~exp=1733436676~hmac=f4a88f8a13732e8ed38b6a69086037552ab3c664fa39102830b2e178c228550b&w=1060" 
+              src={profile} 
               alt="Njoki Kangethe" 
               className="founder-image" 
             />

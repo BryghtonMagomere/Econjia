@@ -1,13 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import "../styles/Blog.css";
 import Layout from "../components/layout";
 import { Truncate } from "../utils/trancate";
-import Comm from './../assets/COMM.jpg'
-import Ecg from './../assets/ECG.jpg'
-import GreenWorld from './../assets/GREENWORLD.jpg'
-import Product from './../assets/PRODUCT.jpg'
+import Ecg from './../assets/ECG.jpg';
+import GreenWorld from './../assets/GREENWORLD.jpg';
 import { Communication, Products } from "../utils/images";
 import { Link } from "react-router-dom";
 
@@ -56,9 +51,8 @@ const Blog = () => {
   ];
 
   return (
-    
     <Layout>
-       <section className="blog">
+      <section className="blog">
         <h1 className="blog-title">Eco-Njia Blog</h1>
         <p className="blog-intro">
           Dive into our latest articles, tips, and updates for a sustainable future. Explore our categories below!
@@ -69,13 +63,12 @@ const Blog = () => {
             <div key={index} className="blog-card">
               <img src={article.image} alt={article.title} className="blog-card-image" />
               <div className="blog-card-content">
-                <div style={{ height:"75px"}}>
-                <h2 className="blog-card-title">{article.title}</h2>
+                <div style={{ height: "75px" }}>
+                  <h2 className="blog-card-title">{article.title}</h2>
                 </div>
-             
                 <p className="blog-card-category">{article.category}</p>
-                <p className="blog-card-description">{Truncate(article.content,100)}</p>
-                <Link to={`/blog/${article.title.replace(/\s+/g, '-').toLowerCase()}`}  className="read-more">
+                <p className="blog-card-description">{Truncate(article.content, 80)}</p>
+                <Link to={`/blog/${article.title.replace(/\s+/g, '-').toLowerCase()}`} className="read-more">
                   Read More
                 </Link>
               </div>
@@ -83,14 +76,14 @@ const Blog = () => {
           ))}
         </div>
 
-        <div className="iframe-section">
-          <h2 className="iframe-title">Rustyfingers Blog</h2>
-          <iframe
-            src="https://rustyfingers33.home.blog/"
-            className="blog-iframe"
-            title="Rustyfingers Blog"
-            frameBorder="0"
-          ></iframe>
+        <div className="personal-blog-section">
+          <p className="personal-blog-text">
+            For a glimpse into my personal musings beyond sustainability and work, check out my lifestyle blog,{' '}
+            <a href="https://rustyfingers33.home.blog/" target="_blank" rel="noopener noreferrer">
+              https://rustyfingers33.home.blog/
+            </a>. It’s where I share reflections on everyday life, passions, and the little moments that make life meaningful. 
+            If you enjoy a mix of candid stories and lifestyle insights, I’d love for you to follow along!
+          </p>
         </div>
       </section>
     </Layout>

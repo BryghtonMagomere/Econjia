@@ -1,17 +1,13 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import "../styles/Projects.css";
+import Layout from "../components/layout";
 import Heroimage1 from "./../assets/kids.jpg";
 import Heroimage2 from "./../assets/kids2.jpg";
-import Heroimage3 from "./../assets/mtaani.jpg";
-import Heroimage5 from "./../assets/mtaani3.jpg";
 import Heroimage6 from "./../assets/mtaani4.jpg";
-import Layout from "../components/layout";
+import "../styles/Projects.css";
 
 const projectsData = [
   {
-    title: "Kids Educational Workshops on Sustainability",
+    title: "Kids' Educational Workshops on Sustainability",
     description: "Empowering children with knowledge about sustainability practices.",
     image: Heroimage1,
   },
@@ -25,23 +21,16 @@ const projectsData = [
     description: "Collaborating with communities to improve recycling rates.",
     image: Heroimage6,
   },
-  {
-    title: "Collaborative Waste Management Initiatives",
-    description: "Working with communities to enhance sustainability through recycling.",
-    image: Heroimage3,
-  },
-  {
-    title: "Plastic Recycling Campaign",
-    description: "Advocating for effective recycling techniques and upcycling.",
-    image: Heroimage5,
-  },
 ];
 
 const Projects = () => {
   return (
-   <Layout>
-    <section className="projects">
+    <Layout>
+      <section className="projects">
         <h1 className="projects-title">Our Projects</h1>
+        <p className="projects-intro">
+          Explore our initiatives aimed at creating a sustainable and eco-friendly future. From educating the next generation to collaborating with communities, our projects inspire positive change.
+        </p>
         <div className="projects-grid">
           {projectsData.map((project, index) => (
             <div className="project-card" key={index}>
@@ -54,7 +43,7 @@ const Projects = () => {
           ))}
         </div>
       </section>
-   </Layout>
+    </Layout>
   );
 };
 

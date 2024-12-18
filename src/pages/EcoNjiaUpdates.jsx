@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/EcoNjiaUpdates.css";
 import Layout from "../components/layout";
+import { Link } from "react-router-dom";
 
 const EcoNjiaUpdates = () => {
   return (
@@ -82,7 +83,7 @@ const EcoNjiaUpdates = () => {
             <p>
               By embracing ESG and CSR, we can protect the environment, build stronger communities, and create a sustainable future for generations to come.
             </p>
-            <a href="/contact" className="cta-button">Get Started Today</a>
+            <Link to="/contact" className="cta-button">Get Started Today</Link>
           </div>
         </div>
       </section>
