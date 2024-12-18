@@ -106,8 +106,9 @@
 }
 
 .social-icons a:hover {
-  color: #c4ceca;
+  color: #020b07;
   transform: scale(1.1);
+  background-color: #ffffff;
 }
 
 /* Footer Bottom Section */
